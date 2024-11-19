@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    
+:root {
+    --primaryTextColor: #fff;
+    --secondaryTextColor: #d9d9d9;
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+
+    --primaryBgColor: #fff;
+    --secondaryBgColor: #fbfbfb;
+    --thirdBgColor: #f3f7fe;
+
+    --primaryIconColor: #004aad;
+    --primaryIconColorHover: #38b6ff;
+
+    --sectionPadding: 6rem 4rem;
+
+    --itemBorderRadius: 0.9rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--primaryTextColor);
+}
+
+p {
+    font-size: 1rem;        /*16px*/
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: var(--secondaryTextColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.profil {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/img/progm.jpg);
+    /* width: 1200px;
+    margin: 0 auto; */
+}
+
+
+
+
+
+
+/* titles */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--secondaryBgColor);
+    position: relative ;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+    /* top: 5rem; */
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--lineColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/* Hero Section */
+#hero {
+    height: 720px;
+    display: grid;
+    /* top: -2rem  ; */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+    color: var(--primaryIconColor);
+}
+
+
+.hero-right img {
+    margin-left: 9rem;
+    width: 50%;
+    border-radius: 0 30%;
+    /* box-shadow: 0px 9px 6px #fbfbfb; */
+    border: 3px solid white;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.hero-right img:hover {
+    /* transform: scale(1.2); */
+    border-radius: 30% 0;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 1200px;  
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.logo a {
+    color: var(--primaryTextColor);
+}
+.logo a:hover {
+    color: var(--primaryIconColor);
+}
+
+
+.ig button {
+    /* display: inline; */
+    margin-top: 3rem;
+    margin-right: 4rem;
+    font-size: 1rem;
+    padding: 9px 22px;
+    border: 3px solid #004aad;
+    border-radius: 10px;
+    background: none;
+    color: #004aad;
+}
+.ig button:hover {
+    color: #fbfbfb;
+    border: 3px solid #fbfbfb;
+}
+
+.wa button {
+    display: inline;
+    margin-top: 3rem;
+    font-size: 1rem;
+    padding: 9px 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: #004aad;
+    color: #fff;
+}
+.wa button:hover {
+    background-color: #fff;
+    color: #004aad;
+}
+
+#kegiatan {
+    background-color: #fbfbfb;
+
+}
